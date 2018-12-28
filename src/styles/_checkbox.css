@@ -1,0 +1,32 @@
+.form-check input[type="checkbox"] {
+    opacity: 0;
+}
+
+.form-check label {
+    position: relative;
+}
+
+.form-check label::before,
+.form-check label::after {
+    display: inline-block;
+    position: absolute;
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 600;
+    left: -18px;
+}
+
+.form-check label::before {
+    content: '';
+    height: 16px;
+    width: 16px;
+    border: 2px solid #f8f9fa;
+    top: 3px;
+}
+
+.form-check label::after {
+}
+
+.form-check input[type="checkbox"]:checked + label::after {
+    content: 'check';
+}
