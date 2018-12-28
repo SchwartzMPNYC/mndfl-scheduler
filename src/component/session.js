@@ -3,7 +3,7 @@ import React from "react";
 const Session = (props) => {
 	let href = `https://www.mndflmeditation.com/greenwich-village.html#/week/${props.classInfo.id}`;
 	return (
-		<a className="card col-sm-6 col-md-3" href={href}>
+		<a className="card col-sm-6 col-md-3" href={href} target="_blank">
 			<div className="card-body">
 				<h5 className="card-title">{props.classInfo.name}</h5>
 
