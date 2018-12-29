@@ -14,11 +14,11 @@
 
 a.card {
     color: #474747;
-    background-color: #f6f6f6;
+    background-color: #F2FFFC;
     transition: background-color 200ms;
 }
 
 a.card:hover {
     text-decoration: none;
-    background-color: #fff;
+    background-color: #C0F0E6;
 }
