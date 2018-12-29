@@ -35,3 +35,7 @@
 .form-check input[type="checkbox"]:checked+label::after {
     content: 'check';
 }
+
+.form-check input[type="checkbox"]:focus + label::before {
+    outline: #F2FFFC solid 1px;
+}
