@@ -20,6 +20,7 @@
     width: 16px;
     top: 3px;
     line-height: 16px;
+    color: #C0F0E6;
 }
 
 .form-check label::before {
@@ -27,13 +28,9 @@
     border: 2px solid #C0F0E6;
 }
 
-.form-check label::after {
-    color: #C0F0E6;
-    left: -20px;
-}
-
 .form-check input[type="checkbox"]:checked+label::after {
     content: 'check';
+    left: -20px;
 }
 
 .form-check input[type="checkbox"]:focus + label::before {
