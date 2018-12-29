@@ -4,6 +4,7 @@
 
 .form-check label {
     position: relative;
+    color: #C0F0E6;
 }
 
 .form-check label::before,
@@ -13,20 +14,24 @@
     font-family: 'Material Icons';
     font-style: normal;
     font-weight: 600;
+    font-size: 20px;
     left: -18px;
+    height: 16px;
+    width: 16px;
+    top: 3px;
+    line-height: 16px;
 }
 
 .form-check label::before {
     content: '';
-    height: 16px;
-    width: 16px;
-    border: 2px solid #f8f9fa;
-    top: 3px;
+    border: 2px solid #C0F0E6;
 }
 
 .form-check label::after {
+    color: #C0F0E6;
+    left: -20px;
 }
 
-.form-check input[type="checkbox"]:checked + label::after {
+.form-check input[type="checkbox"]:checked+label::after {
     content: 'check';
 }
