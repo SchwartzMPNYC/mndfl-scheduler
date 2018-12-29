@@ -61,6 +61,11 @@ class App extends Component {
 
 				<div className="hidden" id="app">
 					<div className="container">
+						<div className="row">
+							<div className="col-sm">
+								<h1>Sessions</h1>
+							</div>
+						</div>
 						{this.state.sessions
 							? Object.entries(
 									this.state.sessions.reduce((acc, curr) => {

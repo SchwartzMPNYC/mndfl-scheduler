@@ -3,9 +3,13 @@ import Session from "./session.js";
 
 const CalendarDay = props => (
 	<div>
-		<div className="row"><h4>{props.date}</h4></div>
+		<div className="row">
+			<div className="col-sm">
+				<h4>{props.date}</h4>
+			</div>
+		</div>
 
-		<div className="row mb-4">
+		<div className="row">
 			{props.sessions.map(session => (
 				<Session key={session.id} classInfo={session} />
 			))}
