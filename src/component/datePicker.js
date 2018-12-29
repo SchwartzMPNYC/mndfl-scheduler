@@ -25,6 +25,8 @@ export class DatePicker extends Component {
 					}
 					openDirection="up"
 					minimumNights={0}
+					numberOfMonths="1"
+
 				/>
 			</div>
 		);
