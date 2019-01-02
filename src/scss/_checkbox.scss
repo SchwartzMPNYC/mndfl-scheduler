@@ -1,38 +1,42 @@
-.form-check input[type="checkbox"] {
-    opacity: 0;
-}
+.form-check {
+    input[type="checkbox"] {
+        opacity: 0;
+    }
 
-.form-check label {
-    position: relative;
-    color: #C0F0E6;
-}
+    label {
+        position: relative;
+        color: $color1;
 
-.form-check label::before,
-.form-check label::after {
-    display: inline-block;
-    position: absolute;
-    font-family: 'Material Icons';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    left: -18px;
-    height: 16px;
-    width: 16px;
-    top: 3px;
-    line-height: 16px;
-    color: #C0F0E6;
-}
+        &::before,
+        &::after {
+            display: inline-block;
+            position: absolute;
+            font-family: 'Material Icons';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            left: -18px;
+            height: 16px;
+            width: 16px;
+            top: 3px;
+            line-height: 16px;
+            color: $color1;
+        }
 
-.form-check label::before {
-    content: '';
-    border: 2px solid #C0F0E6;
-}
+        &::before {
+            content: '';
+            border: 2px solid $color1;
+        }
+    }
 
-.form-check input[type="checkbox"]:checked+label::after {
-    content: 'check';
-    left: -20px;
-}
+    input[type="checkbox"] {
+        &:checked + label::after {
+            content: 'check';
+            left: -20px;
+        }
+        &:focus + label::before {
+            outline: $color0 solid 1px;
+        }
 
-.form-check input[type="checkbox"]:focus + label::before {
-    outline: #F2FFFC solid 1px;
+    }
 }

@@ -3,7 +3,6 @@ a.card {
   background-color: #f2fffc;
   transition: background-color 0.2s;
 }
-
 a.card:hover {
   text-decoration: none;
   background-color: #c0f0e6;
@@ -12,14 +11,11 @@ a.card:hover {
 .form-check input[type=checkbox] {
   opacity: 0;
 }
-
 .form-check label {
   position: relative;
-  color: #C0F0E6;
+  color: #c0f0e6;
 }
-
-.form-check label::before,
-.form-check label::after {
+.form-check label::before, .form-check label::after {
   display: inline-block;
   position: absolute;
   font-family: "Material Icons";
@@ -31,40 +27,25 @@ a.card:hover {
   width: 16px;
   top: 3px;
   line-height: 16px;
-  color: #C0F0E6;
+  color: #c0f0e6;
 }
-
 .form-check label::before {
   content: "";
-  border: 2px solid #C0F0E6;
+  border: 2px solid #c0f0e6;
 }
-
 .form-check input[type=checkbox]:checked + label::after {
   content: "check";
   left: -20px;
 }
-
 .form-check input[type=checkbox]:focus + label::before {
-  outline: #F2FFFC solid 1px;
+  outline: #f2fffc solid 1px;
 }
 
-@-webkit-keyframes spinner {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
 @keyframes spinner {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
@@ -73,7 +54,6 @@ a.card:hover {
   width: 100vw;
   position: relative;
 }
-
 .spinner::before {
   content: "";
   position: absolute;
@@ -82,14 +62,12 @@ a.card:hover {
   top: calc(50% - 100px / 2);
   left: calc(50% - 100px / 2);
   border-radius: 50%;
-  background-color: #337788;
-  border-top: 5px solid #5eafc3;
-  border-left: 5px solid #4197ad;
-  border-bottom: 5px solid #255763;
-  border-right: 5px solid #17363e;
-  -webkit-animation: 2s linear infinite spinner;
+  background-color: #409da2;
+  border-top: 5px solid #7dc7cb;
+  border-left: 5px solid #58b8bd;
+  border-bottom: 5px solid #327a7d;
+  border-right: 5px solid #235659;
   animation: 2s linear infinite spinner;
-  -webkit-transform-origin: center;
   transform-origin: center;
   will-change: transform;
 }
